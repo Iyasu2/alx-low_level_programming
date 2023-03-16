@@ -1,21 +1,15 @@
-#include <stdio.h>
+#include <unistd.h>
 /**
- * write - write function
- * Description: 'printing'
- * Parameters: int filedes, const char *buf and unsigned in nbyte
- * Return: Always 0 (Success)
-*/
-
-int write(int filedes, const char *buf, unsigned int nbyte);
-
-/**
- * main - Entry point
- * Description: 'printing without printf'
- * Parameters: no input returns an int
- * Return: Always 0 (Success)
+ * main - Entry point of the program
+ * Description:'print without printf'
+ * Parameters:no input returns an int
+ * Return: Always 1 (success)
 */
 int main(void)
 {
-	write(1, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 60);
+	/*the const char is used to const*/
+	char *msg = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	
+	write(2, msg, sizeof(msg) - 1);
 	return (1);
 }
