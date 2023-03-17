@@ -3,7 +3,12 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ * Description:'checking if an integer is positive or negative'
+ * Parameters: no input returns an int
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
