@@ -3,7 +3,7 @@
  * print_last_digit - Entry point
  * Description: 'printing last digit of a number'
  * Parameters: input int n:
- * Parameter Description 'number input to be converted'
+ * @n: the input to check
  * Return: last digit of n
  */
 int print_last_digit(int n)

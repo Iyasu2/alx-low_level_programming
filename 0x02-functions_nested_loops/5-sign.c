@@ -2,7 +2,8 @@
 /**
  * print_sign - Entry point
  * Description: 'printing sign of a number'
- * Parameters: input int n: 'number input to be checked'
+ * Parameters: input int n
+ * @n: input integer to be checked
  * Return: 0 if n is zero, 1 if n is positive, -1 if n is negative
  */
 int print_sign(int n)
