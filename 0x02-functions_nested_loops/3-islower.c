@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * is_lower - Entry point
+ * _islower - Entry point
  * Description: 'checking if an alphabet is lowercase'
- * Parameters: no input no return
- * Return: none
+ * Parameters: int 'c' - input to the function
+ * Return: 1 if lowercase 0 otherwise
  */
 int _islower(int c)
 {
