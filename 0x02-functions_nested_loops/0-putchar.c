@@ -8,7 +8,7 @@
 int main(void)
 {
 	char no_printf[] = "_putchar";
-	long unsigned int i;
+	unsigned long i;
 
 	for (i = 0; i < sizeof(no_printf); i++)
 	{
