@@ -53,7 +53,10 @@ int loop(int a, int b, int c)
 			return (1);
 		_putchar(',');
 		_putchar(' ');
-		_putchar(' ');
+		if (c + a < 10)
+		{
+			_putchar(' ');
+		}
 	}
 	else
 	{
