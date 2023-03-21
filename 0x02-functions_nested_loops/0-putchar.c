@@ -1,4 +1,5 @@
 #include "main.h"
+#include "stdio.h"
 /**
  * main - Entry point
  * Description: 'printing using putchar'
@@ -7,14 +8,7 @@
  */
 int main(void)
 {
-	char no_printf[] = "_putchar";
-	unsigned long i;
-
-	for (i = 0; i < sizeof(no_printf); i++)
-	{
-		_putchar(no_printf[i]);
-	}
-	_putchar('\n');
+	printf("_putchar");
 
 	return (0);
 }
