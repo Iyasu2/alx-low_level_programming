@@ -2,7 +2,8 @@
 /**
  * _islower - Entry point
  * Description: 'checking if an alphabet is lowercase'
- * Parameters: int 'c' - input to the function
+ * Parameters: int 'c'
+ * @c: character to be checked
  * Return: 1 if lowercase 0 otherwise
  */
 int _islower(int c)
