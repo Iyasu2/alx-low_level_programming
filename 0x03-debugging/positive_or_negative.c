@@ -9,24 +9,18 @@
  * Parameters: no input returns an int
  * Return: Always 0 (Success)
  */
-int main(void)
+void positive_or_negative(int i)
 {
-        int n;
-
-        srand(time(0));
-        n = rand() - RAND_MAX / 2;
-        /* your code goes there */
-        if (n > 0)
+        if (i > 0)
         {
-                printf("%u is positive\n", n);
+                printf("%u is positive\n", i);
         }
-        else if (n < 0)
+        else if (i < 0)
         {
-                printf("%i is negative\n", n);
+                printf("%i is negative\n", i);
         }
         else
         {
-                printf("%u is zero\n", n);
+                printf("%u is zero\n", i);
         }
-        return (0);
 }
