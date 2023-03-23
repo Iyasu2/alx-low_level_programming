@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_triangle - Entry point
- * Description: 'printing a triangle using puts'
+ * Description: 'print
  * Parameters: int size input no return
  * @size : size of triangle
  * Return: none
