@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * print_diagonal - Entry point
  * Description: 'printing diagonal using puts'
