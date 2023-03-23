@@ -1,16 +1,16 @@
 #include "main.h"
 /**
- * add - Entry point
- * Description: 'adding two integers'
+ * mul - Entry point
+ * Description: 'multiplying two integers'
  * Parameters: two int inputs
  * @a: integer input 1
  * @b: integer input 2
  * Return: returns an int
  */
-int add(int a, int b)
+int mul(int a, int b)
 {
-	int sum;
+	int mul;
 
-	sum = a + b;
-	return (sum);
+	mul = a * b;
+	return (mul);
 }
