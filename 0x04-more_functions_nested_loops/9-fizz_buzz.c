@@ -26,7 +26,10 @@ int main(void)
 			printf("FizzBuzz ");
 			continue;
 		}
-		printf("%i ", i + 1);
+		else
+		{
+			printf("%i ", i + 1);
+		}
 	}
 	printf("\n");
 	return 0;
