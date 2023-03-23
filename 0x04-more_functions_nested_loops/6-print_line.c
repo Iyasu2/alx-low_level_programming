@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * print_line - Entry point
  * Description: 'printing a line using puts'
