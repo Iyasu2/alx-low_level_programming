@@ -19,8 +19,13 @@ int main(void)
 		}
 		else if (((i + 1) % 5 == 0) && ((i + 1) % 3 != 0))
 		{
-			printf("Buzz ");
-			continue;
+			if (i + 1 == 100)
+				printf("Buzz");
+			else
+			{
+				printf("Buzz ");
+				continue;
+			}
 		}
 		else if (((i + 1) % 5 == 0) && ((i + 1) % 3 == 0))
 		{
