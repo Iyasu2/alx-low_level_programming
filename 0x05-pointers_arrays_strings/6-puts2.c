@@ -1,25 +1,20 @@
 #include "main.h"
 /**
- * print_rev - Entry point
- * Description: 'printing string in reverse'
+ * puts2 - Entry point
+ * Description: 'printing every other string'
  * Parameters: char input no return
- * @s: char input
+ * @str: char input
  * Return: no return
  */
-void print_rev(char *s)
+void puts2(char *str)
 {
 	int i;
-	int j;
 
-	for (i = 0; *s != '\0'; i++)
+	for (i = 0; *str != '\0'; i++)
 	{
-		s++;
-	}
-
-	for (j = 0; j < i; j++)
-	{
-		s--;
-		_putchar(*s);
+		if (i % 2 == 0)
+			_putchar(*str);
+		str++;
 	}
 
 	_putchar('\n');
