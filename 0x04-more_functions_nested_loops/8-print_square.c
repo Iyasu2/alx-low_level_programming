@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * print_square - Entry point
  * Description: 'printing a square using puts'
@@ -10,12 +11,17 @@ void print_square(int size)
 	int i;
 	int j;
 
-	for (i = 0; i < n; i++)
+	if (size <= 0)
 	{
-		for (j = 0; j < n; j++)
+		putchar('\n');
+	}
+
+	for (i = 0; i < size; i++)
+	{
+		for (j = 0; j < size; j++)
 		{
-			_putchar('#');
+			putchar('#');
 		}
-		_putchar('\n');
+		putchar('\n');
 	}
 }

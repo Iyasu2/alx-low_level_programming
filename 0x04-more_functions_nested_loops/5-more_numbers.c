@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * more_numbers - Entry point
  * Description: 'printing digits ten times using puts'
@@ -13,15 +14,12 @@ void more_numbers(void)
 	{
 		for (j = 0; j < 15; j++)
 		{
-			if (j < 10)
+			if (j > 9)
 			{
-				_putchar('j');
+				putchar((j / 10) + 48);
 			}
-			else
-			{
-				_putchar('1' + 'j % 10');
-			}
+			putchar((j % 10) + 48);
 		}
-		_putchar('\n');
+		putchar('\n');
 	}
 }

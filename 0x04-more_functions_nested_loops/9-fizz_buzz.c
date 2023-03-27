@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * main - Entry point
  * Description: 'fizz buzz test'
@@ -18,16 +19,24 @@ int main(void)
 		}
 		else if (((i + 1) % 5 == 0) && ((i + 1) % 3 != 0))
 		{
-			printf("Buzz ");
-			continue;
+			if (i + 1 == 100)
+				printf("Buzz");
+			else
+			{
+				printf("Buzz ");
+				continue;
+			}
 		}
 		else if (((i + 1) % 5 == 0) && ((i + 1) % 3 == 0))
 		{
 			printf("FizzBuzz ");
 			continue;
 		}
-		printf("%i ", i + 1);
+		else
+		{
+			printf("%i ", i + 1);
+		}
 	}
 	printf("\n");
-	return 0;
+	return (0);
 }
