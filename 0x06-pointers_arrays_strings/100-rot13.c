@@ -1,10 +1,10 @@
+#include "main.h"
 /**
- *
- * rot13 - replaces certain characters in a string with leet (1337) equivalents
- *
- * @str: the string to modify
- *
- * Return: a pointer to the modified string
+ * rot13 - Entry point
+ * Description: 'encoding a string using rot13'
+ * Parameters: char input returns a char
+ * @str: char input
+ * Return: Always 0 (Success)
  */
 
 char *rot13(char *str)
