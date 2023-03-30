@@ -1,4 +1,5 @@
 #include "main.h"
+#include <ctype.h>
 /**
  * cap_string - Entry point
  * Description: 'capitalizing a string'
@@ -17,10 +18,7 @@ char *cap_string(char *s)
 			s[i] == '!' || s[i] == '?' || s[i] == '"' || s[i] == '(' ||
 			s[i] == ')' || s[i] == '{' || s[i] == '}')
 		{
-			if (s[i + 1] > 96 && s[i + 1] < 123)
-			{
-				s[i + 1] = s[i + 1] - 32;
-			}
+			s[i + 1] = toupper(s[i + 1]);
 		}
 	}
 	return (s);
