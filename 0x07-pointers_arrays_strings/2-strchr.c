@@ -1,25 +1,31 @@
 #include "main.h"
 /**
  * _strchr - Entry point
- * Description: 'copying a string to another string'
- * Parameters: two char and 1 unsigned int input returns a char
- * @dest: char input 1
- * @src: char input 2
- * @n: unsigned int input
+ * Description: 'searching for a character in a string'
+ * Parameters: two char inputs returns a char
+ * @s: char input 1
+ * @c: char input 2
  * Return: modified char
  */
-char *_memcpy(char *dest, char *src, unsigned int n)
+char *_strchr(char *s, char c)
 {
-	unsigned i;
+	int i;
+	int counter = 0;
 	char *final;
 
-	for (i = 0; i < n && *dest != '\0'; i++)
+	for (i = 0; *s != '\0'; i++)
 	{
-		*dest = *src;
-		dest++;
-		src++;
+		if (s[i] == c)
+		{
+			s = s + i;
+			counter++;
+			break;
+		}
 	}
-	final = dest;
 
+	if (counter == 0)
+		return (NULL);
+
+	final = s;
 	return (final);
 }
