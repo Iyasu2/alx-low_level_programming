@@ -3,7 +3,7 @@
  * print_chessboard - Entry point
  * Description: 'print a chessboard'
  * Parameters: 2d char input no return
- * @s: char input 1
+ * @a: char input 1
  * Return: no return
  */
 void print_chessboard(char (*a)[8])
