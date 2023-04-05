@@ -8,14 +8,9 @@
  */
 int main(void)
 {
-	char *s = "hello my name is Iyasu Asnake";
-	char *f;
+	int n;
 
-	f = _strchr(s, 'K');
-
-	if (f != NULL)
-	{
-		printf("%s\n", f);
-	}
+	n = _strlen_recursion("Corbin Coleman");
+	printf("%d\n", n);
 	return (0);
 }
