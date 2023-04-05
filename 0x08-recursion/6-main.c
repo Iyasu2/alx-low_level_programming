@@ -2,17 +2,29 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
+ *  * main - check the code
+ *   *
+ *    * Return: Always 0.
+ *     */
 int main(void)
 {
-    char str[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\nhello world! hello-world 0123456hello world\thello world.hello world\n";
-    char *ptr;
+	    int r;
 
-    ptr = cap_string(str);
-    printf("%s", ptr);
-    printf("%s", str);
-    return (0);
+	        r = is_prime_number(1);
+		    printf("%d\n", r);
+		        r = is_prime_number(1024);
+			    printf("%d\n", r);
+			        r = is_prime_number(16);
+				    printf("%d\n", r);
+				        r = is_prime_number(17);
+					    printf("%d\n", r);
+					        r = is_prime_number(25);
+						    printf("%d\n", r);
+						        r = is_prime_number(-1);
+							    printf("%d\n", r);
+							        r = is_prime_number(113);
+								    printf("%d\n", r);
+								        r = is_prime_number(7919);
+									    printf("%d\n", r);
+									        return (0);
 }

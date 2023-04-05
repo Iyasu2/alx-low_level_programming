@@ -18,7 +18,7 @@ int is_prime_number(int n)
 		return (1);
 	if (n < 9)
 		return (1);
-	if (n % 3 == 0  n % 5 == 0  n % 7 == 0)
+	if (n % 3 == 0 || n % 5 == 0 || n % 7 == 0)
 		return (0);
 	return (1);
 }
