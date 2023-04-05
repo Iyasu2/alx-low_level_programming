@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * is_prime_numer - Entry point
+ * is_prime_number - Entry point
  * Description: 'checking for a prime number using recursion'
  * Parameters: int input int return
  * @n: int input 1
