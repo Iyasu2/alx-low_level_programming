@@ -4,7 +4,7 @@
 int is_number(char *s);
 /**
  * main - Entry point
- * Description: 'adds numbers'
+ * Description: 'adds niumbers'
  * Parameters: int and a char input returns an int
  * @argc: number of arguments
  * @argv: array storing the arguments
@@ -18,6 +18,7 @@ int main(int argc, char *argv[])
 	if (argc == 1)
 	{
 		printf("0\n");
+		return (0);
 	}
 
 	for (i = 0; i < argc - 1; i++)
