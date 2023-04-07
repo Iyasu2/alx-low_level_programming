@@ -2,8 +2,10 @@
 
 /**
  * main - Entry point
- * Description: 'printing alphabets'
- * Parameters: no input returns an int
+ * Description: 'printing the file's name'
+ * Parameters: int and a char input returns an int
+ * @argc: number of arguments
+ * @argv: array storing the arguments
  * Return: Always 0 (Success)
  */
 int main(int argc, char *argv[])
