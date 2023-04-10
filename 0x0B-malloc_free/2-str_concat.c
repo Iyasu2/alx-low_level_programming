@@ -20,27 +20,32 @@ char *str_concat(char *s1, char *s2)
 	if (s1 == NULL && s2 != NULL)
 	{
 		s = malloc((sizeof(char) * strlen(s2)) + 1);
+		if (s == NULL)
+			return (NULL);
 		s = nulls1(s, s2);
 	}
 	else if (s1 != NULL && s2 == NULL)
 	{
 		s = malloc((sizeof(char) * strlen(s1)) + 1);
+		if (s == NULL)
+			return (NULL);
 		s = nulls2(s, s1);
 	}
 
 	else if (s1 == NULL && s2 == NULL)
 	{
 		s = malloc(sizeof(char) * 1);
+		if (s == NULL)
+			return (NULL);
 		s[0] = '\0';
 	}
 	else
 	{
 		s = malloc(sizeof(char) * (strlen(s1) + strlen(s2) + 1));
+		if (s == NULL)
+			return (NULL);
 		s = nonull(s, s1, s2);
 	}
-
-	if (s == NULL)
-		return (NULL);
 
 	return (s);
 	free(s);
