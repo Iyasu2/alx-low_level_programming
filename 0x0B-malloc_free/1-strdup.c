@@ -12,8 +12,9 @@ char *_strdup(char *str)
 {
 	int i;
 	char *s;
+
 	if (str == NULL)
-		return NULL;
+		return (NULL);
 
 	s = malloc(sizeof(char) * 1000);
 
@@ -21,7 +22,7 @@ char *_strdup(char *str)
 	{
 		if (s == NULL)
 		{
-			return NULL;
+			return (NULL);
 		}
 		s[i] = str[i];
 	}
