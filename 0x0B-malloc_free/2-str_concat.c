@@ -39,6 +39,9 @@ char *str_concat(char *s1, char *s2)
 		s = nonull(s, s1, s2);
 	}
 
+	if (s == NULL)
+		return (NULL);
+
 	return (s);
 	free(s);
 }
