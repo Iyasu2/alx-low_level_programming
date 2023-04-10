@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * _alloc_grid - Entry point
+ * alloc_grid - Entry point
  * Description: 'returning a 2d array'
  *
  * @width: int input 1
@@ -18,9 +18,9 @@ int **alloc_grid(int width, int height)
 	if (width < 1 || height < 1)
 		return (NULL);
 
-	s = malloc(sizeof(int*) * width);
+	s = malloc(sizeof(int *) * width);
 	if (s == NULL)
-		return(NULL);
+		return (NULL);
 	for (k = 0; k < width; k++)
 	{
 		s[k] = malloc(sizeof(int) * height);
