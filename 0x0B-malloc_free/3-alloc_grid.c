@@ -13,34 +13,35 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int k, i, j, h;
+	int i, j;
 	int **s;
 
-	if (width < 1 || height < 1)
+	if (width <= 0 || height <= 0)
 		return (NULL);
 
-	s = malloc((width) * (sizeof(int *)));
+	s = malloc(height * sizeof(int *));
 	if (s == NULL)
 		return (NULL);
-	printf("%li\n", sizeof(s));
-	for (k = 0; k < width; k++)
-	{
-		s[k] = malloc(sizeof(int) * height);
-		if (s[k] == NULL)
-			return (NULL);
-	}
 
-	for (i = 0; i < width; i++)
+	for (i = 0; i < height; i++)
 	{
-		for (j = 0; j < height; j++)
+		s[i] = malloc(width * sizeof(int));
+		if (s[i] == NULL)
 		{
-			s[i][j] = 0;
+			for (j = 0; j < i; j++)
+			{
+				free(s[j]);
+			}
+			free(s);
+			return (NULL);
 		}
 	}
-	return (s);
-	for (h = 0; h < width; h++)
+	for (i = 0; i < height; i++)
 	{
-		free(s[h]);
+		for (j = 0; j < width; j++)
+			{
+				s[i][j] = 0;
+			}
 	}
-	free(s);
+	return (s);
 }
