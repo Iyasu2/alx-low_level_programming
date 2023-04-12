@@ -2,13 +2,12 @@
 #include <string.h>
 #include "main.h"
 
-char *str_nconcat(char *s1, char *s2, unsigned int n);
 char *nulls1(char *a, char *b, unsigned int x);
 char *nulls2(char *a, char *b);
 char *nonull(char *a, char *b, char *c);
 char *nonull_n(char *a, char *b, char *c, unsigned int x);
 /**
- * str_nconcat - Entry point
+ * string_nconcat - Entry point
  * Description: 'concatenating two strings'
  *
  * @s1: char input 1
@@ -16,7 +15,7 @@ char *nonull_n(char *a, char *b, char *c, unsigned int x);
  * @n: int input
  * Return: a char
  */
-char *str_nconcat(char *s1, char *s2, unsigned int n)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *s;
 
