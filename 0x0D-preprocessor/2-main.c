@@ -3,18 +3,10 @@
  * main - Entry point
  * Description: 'printing name'
  *
- * @argc: int input
- * @argv: char input
- * Return: none
+ * Return: always 0
  */
-int main(int argc, char *argv[])
+int main(void)
 {
-	int i;
-
-	if (argc < 1)
-		return (1);
-	for (i = 2; argv[0][i] != '\0'; i++)
-		printf("%c", argv[0][i]);
-	printf("\n");
+	printf("%s\n", __FILE__);
 	return (0);
 }
