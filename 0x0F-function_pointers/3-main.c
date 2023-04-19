@@ -3,7 +3,6 @@
 #include <string.h>
 #include "3-calc.h"
 
-#define TRU(x, a, b, c, d, e)  (x != a && x != b && x != c && x != d && x != e)
 /**
 * main - entry point
 * Description: 'get input'
@@ -24,7 +23,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	if (TRU(*argv[2], '+', '-', '*', '/', '%') || argv[2][1])
+	if (get_op_func(argv[2]) == NULL)
 	{
 		printf("Error\n");
 		exit(99);
