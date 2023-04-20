@@ -21,27 +21,26 @@ void print_all(const char * const format, ...)
 		{
 			case 'c':
 				printf("%c", va_arg(s, int));
-				counter++;
 				break;
 			case 'i':
 				printf("%d", va_arg(s, int));
-				counter++;
 				break;
 			case 'f':
 				printf("%f", (float)va_arg(s, double));
-				counter++;
 				break;
 			case 's':
 				c = va_arg(s, char *);
-				counter++;
-				printf("%s", c ? c : "(nil)");
+				if (c == NULL)
+					c = "(nil)";
+				printf("%s", c);
+				break;
 			default:
+				counter++;
 				break;
 		}
-		if (format[i + 1] && counter == i + 1)
+		if (format[i + 1] && counter == 0)
 			printf(", ");
-		else
-			counter++;
+		counter = 0;
 		i++;
 	}
 	printf("\n");
