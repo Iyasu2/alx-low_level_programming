@@ -3,18 +3,17 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * free_list - Entry point
+ * free_listint - Entry point
  * Description: 'free linked lists'
  *
- * @head: list_t input
+ * @head: listint_t input
  * Return: none
  */
-void free_list(list_t *head)
+void free_listint(listint_t *head)
 {
 	if (head == NULL)
 		return;
 
-	free_list(head->next);
-	free(head->str);
+	free_listint(head->next);
 	free(head);
 }
