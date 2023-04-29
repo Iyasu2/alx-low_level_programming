@@ -3,32 +3,26 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * add_node_end - Entry point
+ * add_nodeint_end - Entry point
  * Description: 'add node at the end of linked list'
  *
  * @head: list_t input
- * @str: char input
+ * @n: int input
  * Return: adress of the new element or null
  */
-list_t *add_node_end(list_t **head, const char *str)
+listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	list_t *new_node, *last_node;
+	listint_t *new_node, *last_node;
 
-	if (head == NULL || str == NULL)
+	if (head == NULL)
 		return (NULL);
 
-	new_node = malloc(sizeof(list_t));
+	new_node = malloc(sizeof(listint_t));
 	if (new_node == NULL)
 	{
 		return (NULL);
 	}
-	new_node->str = strdup(str);
-	if (new_node->str == NULL)
-	{
-		free(new_node);
-		return (NULL);
-	}
-	new_node->len = strlen(str);
+	new_node->n = n;
 	if (*head == NULL)
 		*head = new_node;
 	else
