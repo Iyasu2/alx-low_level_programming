@@ -1,13 +1,13 @@
 #include "lists.h"
 #include <stdio.h>
 /**
- * list_len - Entry point
+ * listint_len - Entry point
  * Description: 'returning elements in a linked list'
  *
- * @h: list_t input
+ * @h: listint_t input
  * Return: size_t number of elements
  */
-size_t list_len(const list_t *h)
+size_t listint_len(const listint_t *h)
 {
 	size_t nodes = 0;
 
