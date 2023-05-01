@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * print_listint_safe - Entry point
  * Description: 'printing all elements of list safely'
