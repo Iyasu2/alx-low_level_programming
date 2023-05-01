@@ -12,6 +12,9 @@ size_t print_listint_safe(const listint_t *head)
 {
 	size_t nodes = 0;
 
+	if (head == NULL)
+		exit(98);
+
 	while (head != NULL)
 	{
 		printf("[%p] %d\n", (void *)head, head->n);
@@ -20,7 +23,7 @@ size_t print_listint_safe(const listint_t *head)
 		if (head <= head->next)
 		{
 			printf("-> [%p] %d\n", (void *)head->next, head->next->n);
-			exit(98);
+			break;
 		}
 		head = head->next;
 	}
