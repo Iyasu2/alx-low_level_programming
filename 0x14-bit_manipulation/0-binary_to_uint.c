@@ -41,7 +41,7 @@ double pow(double a, double b)
 	{
 		power = power * a;
 	}
-	return power;
+	return (power);
 }
 
 
