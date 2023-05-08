@@ -40,7 +40,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	buffer[count] = '\0';
 	for (i = 0; i < count; i++)
 	{
-		_putchar(buffer[i]);
+		putchar(buffer[i]);
 	}
 
 	fclose(fp);
