@@ -1,17 +1,23 @@
 #include <stdio.h>
-
-ssize_t my_getline(char **lineptr, size_t *n, FILE *stream);
+#include <string.h>
+#include <stdlib.h>
 
 int main(void)
 {
 	char *line = NULL;
 	size_t len = 0;
-	ssize_t read;
 
-	printf("$ ");
-	read = my_getline(&line, &len, stdin);
+	while (1)
+	{
+		printf("#cisfun$ ");
+		getline(&line, &len, stdin);
 
-	printf("You entered: %s and the line number: %lu\n", line, read);
+		if (strcmp(line, "^c") == 0)
+		{
+			free(line);
+			return (0);
+		}
+	}
 
 	return 0;
 }
