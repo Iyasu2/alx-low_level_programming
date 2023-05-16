@@ -19,14 +19,14 @@ int main(void)
 		{
 			for (k = i; k < 10; k++)
 			{
-				for (h = j + 1; h < 10; h++)
+				for (h = j; h < 10; h++)
 				{
 					putchar(i + 48);
 					putchar(j + 48);
 					putchar(' ');
 					putchar(k + 48);
 					putchar(h + 48);
-					
+
 					if (i != 98)
 					{
 						putchar(',');
