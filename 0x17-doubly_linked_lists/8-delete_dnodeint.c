@@ -7,7 +7,7 @@
  * Description: 'delete node at a given position of linked list'
  *
  * @head: dlistint_t input
- * @index: unsigned int input
+ * @idx: unsigned int input
  * Return: 1 if success -1 if failure
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int idx)
