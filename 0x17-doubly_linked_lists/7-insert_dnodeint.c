@@ -11,7 +11,8 @@
  * @idx: unsigned int input
  * Return: adress of the new element or null
  */
-dlistint_t *insert_dnodeint_at_index(dlistint_t **head, unsigned int idx, int n)
+dlistint_t *insert_dnodeint_at_index(dlistint_t **head,
+		unsigned int idx, int n)
 {
 	unsigned int i;
 	dlistint_t *new_node, *last_node;
