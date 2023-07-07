@@ -7,7 +7,7 @@
 
 /**
  * struct hash_node_s - Node of a hash table
- * 
+ *
  * @key: The key, string
  * The key is unique in the HashTable
  * @value: The value corresponding to a key
@@ -36,5 +36,6 @@ typedef struct hash_table_s
 
 /* prototypes for functions */
 hash_table_t *hash_table_create(unsigned long int size);
+unsigned long int hash_djb2(const unsigned char *str);
 
 #endif /* HASH_TABLES_H */
